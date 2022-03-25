@@ -68,7 +68,6 @@
 }
 
 .container-two {
-    width: 50%;
     border-radius: 5px;
     border: 1px solid light;
 }
@@ -108,4 +107,7 @@ footer {
 li:hover {
     color: black;
     text-decoration: underline;
+}
+.wrapping {
+    overflow-x: scroll;
 }
