@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <title>Document</title>
+  <link href="boot.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/3c77c16a6c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark nav-color">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="d-block my-1" viewBox="0 0 118 94"
+            role="img">
+            <title>Bootstrap</title>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"
+              fill="white"></path>
+          </svg>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" id="home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" id="docs">Docs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" id="examples">Examples</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" id="icons">Icons</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" id="themes">Themes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" id="blog">Blog</a>
+            </li>
+          </ul>
+          <div>
+            <i class="fa fa-github icon-color"></i>
+            <i class="fa fa-twitter icon-color"></i>
+            <i class="fa fa-slack icon-color"></i>
+            <button class="btn btn-outline-warning">Download</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="p-2 border-bottom flexing shadow">
+    <input type="seacrch" placeholder="search docs...   Ctrl+/">
+    <div>
+      <div class="dropdown">
+        <button class="btn btn-light border dropdown-toggle" type="button" id="dropdownMenuButton2"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          Bootstrap v5.1
+        </button>
+        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="dropdownMenuButton2">
+          <li><a class="dropdown-item active" href="#">Latest (5.1.x)</a></li>
+          <li><a class="dropdown-item" href="#">v4.6.x</a></li>
+          <li><a class="dropdown-item" href="#">v3.4.1</a></li>
+          <li><a class="dropdown-item" href="#">v2.3.2</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">All versions</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Mobile-view-initial etra small to small approach-->
+  <div class="d-block d-sm-block d-md-none d-lg-none d-xl-none d-xxl-none p-2">
+    <button class="button-view-on-github d-md-none d-lg-none d-xl-none d-xxl-none mt-3">View on Github</button>
+    <h1 class="pt-3 pb-3"><b>Introduction</b></h1>
+    <p>Get started with Bootstrap, the world’s most
+      popular framework for building responsive, mobile-first sites,
+      with jsDelivr and a template starter page.</p>
+    <div class="d-flex bg-light p-3 m-4">
+      <img src="https://cdn4.buysellads.net/uu/1/3386/1525189943-38523.png" width="150px" height="100px" />
+      <p class="p-2">Limited time offer: Get 10 free Adobe Stock images.<br />
+        ads via Carbon</p>
+    </div>
+  </div>
+  <div class="d-block d-sm-block d-md-none d-lg-none d-xl-none d-xxl-none">
+    <h6>On this page</h6>
+    <hr />
+    <ul class="styling">
+      <li>Quick start</li>
+      <ul class="styling">
+        <li>CSS</li>
+        <li>JS</li>
+        <ul class="styling">
+          <li>Bundle</li>
+          <li>Separate</li>
+          <li>Modules</li>
+          <li>Components</li>
+        </ul>
+      </ul>
+    </ul>
+    <ul class="styling">
+      <li>Starter template</li>
+      <li>Important globals</li>
+      <ul class="styling">
+        <li>HTML5 DOCTYPE</li>
+        <li>Responsive meta tag</li>
+        <li>Box-sizing</li>
+        <li>Reboot</li>
+      </ul>
+    </ul>
+    <ul class="styling">
+      <li>Community</li>
+    </ul>
+  </div>
+  <div class="d-block d-sm-block d-md-none d-lg-none d-xl-none d-xxl-none pt-3">
+    <h4><b>Quick start</b>
+    </h4>
+    <p>Looking to quickly add Bootstrap to your project? Use jsDelivr, a free open source CDN. Using a package <br />
+      manager or need to download the source files? <a href="#">Head to the downloads page</a>.</p>
+    <h4><b>CSS</b></h4>
+    <p>Copy-paste the stylesheet into your before all other stylesheets to load our CSS.</p>
+    <div class="bg-light p-2">
+      <div class="d-flex flex-direction-row justify-content-end">
+        <button type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top"
+          title="copy">
+          copy
+        </button>
+      </div>
+      <p><a href="#">link href</a>=<span>"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        </span><a href="#">rel</a>=<span>"stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"</span>
+        crossorigin="anonymous"</p>
+    </div>
+    <h4 class="pt-3">JS</h4>
+    <p>Many of our components require the use of JavaScript to function. Specifically, they require our own
+      JavaScript<br /> plugins and <a href="#">Popper</a>. Place <b>one of the followings </b>near the end of your
+      pages, right before the closing<br /> tag, to enable them.
+
+    </p>
+    <h4 class="pt-3">Bundle</h4>
+    <p>Include every Bootstrap JavaScript plugin and dependency with one of our two bundles. Both<br />
+      bootstrap.bundle.js and bootstrap.bundle.min.js include Popper for our tooltips and popovers. For more<br />
+      information about what’s included in Bootstrap, please see our contents section.</p>
+    <div class="bg-light p-2">
+      <div class="d-flex flex-direction-row justify-content-end">
+        <button type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top"
+          title="copy">
+          copy
+        </button>
+      </div>
+      <p><a href="#">link href</a>=<span>"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        </span><a href="#">rel</a>=<span>"stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"</span>
+        crossorigin="anonymous"</p>
+    </div>
+    <h4 class="pt-3">Separate</h4>
+    <p>If you decide to go with the separate scripts solution, Popper must come first (if you’re using tooltips or
+      popovers), and then our JavaScript plugins.</p>
+    <div class="bg-light p-2">
+      <div class="d-flex flex-direction-row justify-content-end">
+        <button type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top"
+          title="copy">
+          copy
+        </button>
+      </div>
+      <p><a href="#">link href</a>=<span>"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        </span><a href="#">rel</a>=<span>"stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"</span>
+        crossorigin="anonymous"</p>
+    </div>
+    <h4 class="pt-3">Modules</h4>
+    <p><span>If you see script type ="modules"</span>,please refer to out<a href="#">using Bootstrap as a module</a>
+    </p>
+    <h4 class="pt-3">Components</h4>
+    <p>Curious which components explicitly require our JavaScript and Popper? Click the show components link<br />
+      below. If you’re at all unsure about the general page structure, keep reading for an example page template.</p>
+    <a href="#">Show components requiring JavaScript</a>
+    <h1 class="pt-3">Starter template</h1>
+    <p>Be sure to have your pages set up with the latest design and development standards. That means using an
+      <br />HTML5 doctype and including a viewport meta tag for proper responsive behaviors. Put it all together and
+      your<br /> pages should look like this:
+    </p>
+    <div class="bg-light p-2">
+      <div class="d-flex flex-direction-row justify-content-end">
+        <button type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top"
+          title="copy">
+          copy
+        </button>
+      </div>
+      <p><a href="#">link href</a>=<span>"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        </span><a href="#">rel</a>=<span>"stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"</span>
+        crossorigin="anonymous"
+
+
+        meta charset="utf-8"
+        meta name="viewport" content="width=device-width, initial-scale=1"
+
+
+        link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+        script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+      </p>
+    </div>
+    <p>For next steps, visit the <a href="#">Layout docs </a>or<a href="#">our official</a> examples to start laying
+      out your site’s content and components.</p>
+    <h4>Important globals</h4>
+    <p>Bootstrap employs a handful of important global styles and settings that you’ll need to be aware of when using
+      <br />it, all of which are almost exclusively geared towards the normalization of cross browser styles. Let’s
+      dive in.
+    </p>
+    <h4 class="pt-3">HTML5 doctype</h4>
+    <p>Bootstrap requires the use of the HTML5 doctype. Without it, you’ll see some funky incomplete styling,
+      but<br /> including it shouldn’t cause any considerable hiccups.</p>
+    <div class="bg-light p-2">
+      <div class="d-flex flex-direction-row justify-content-end">
+        <button type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top"
+          title="copy">
+          copy
+        </button>
+      </div>
+      <p><a href="#">link href</a>=<span>"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        </span><a href="#">rel</a>=<span>"stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"</span>
+        crossorigin="anonymous"</p>
+    </div>
+    <h4 class="pt-3">Responsive meta tag</h4>
+    <p>Bootstrap is developed mobile first, a strategy in which we optimize code for mobile devices first and then
+      <br />scale up components as necessary using CSS media queries. To ensure proper rendering and touch zooming
+      <br />for all devices, add the responsive viewport meta tag to your
+    </p>
+    <div class="bg-light p-2">
+      <div class="d-flex flex-direction-row justify-content-end">
+        <button type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top"
+          title="copy">
+          copy
+        </button>
+      </div>
+      <p><a href="#">link href</a>=<span>"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        </span><a href="#">rel</a>=<span>"stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"</span>
+        crossorigin="anonymous"</p>
+    </div>
+    <p>You can see an example of this in action in the <a href="#">starter template.</a></p>
+    <h4 class="pt-3">Box-sizing</h4>
+    <p>For more straightforward sizing in CSS, we switch the global box-sizing value from content-box to border-box.
+      This ensures padding does not affect the final computed width of an element, but it can cause problems with some
+      third-party software like Google Maps and Google Custom Search Engine</p>
+    <p>On the rare occasion you need to override it, use something like the following:</p>
+    <div class="bg-light p-2">
+      <div class="d-flex flex-direction-row justify-content-end">
+        <button type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top"
+          title="copy">
+          copy
+        </button>
+      </div>
+      <p><a href="#">link href</a>=<span>"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        </span><a href="#">rel</a>=<span>"stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"</span>
+        crossorigin="anonymous"</p>
+    </div>
+    <p>With the above snippet, nested elements—including generated content via ::before and ::after—will all inherit
+      the specified box-sizing for that .selector-for-some-widget.
+
+    </p>
+    <p>Learn more about <a href="#">box model and sizing at CSS Tricks</a></p>
+    <h4 class="pt-3">Reboot</h4>
+    <p>For improved cross-browser rendering, we use <a href="#">Reboot</a> to correct inconsistencies across browsers
+      and devices while providing slightly more opinionated resets to common HTML elements.</p>
+    <h4>Community</h4>
+    <p>
+      Stay up to date on the development of Bootstrap and reach out to the community with these helpful resources.
+    </p>
+    <ul>
+      <li>Read and subscribe to<a href="#"> The Official Bootstrap Blog.</a></a>li>
+      <li>Join <a href="#">the official Slack room.</a></li>
+      <li>Chat with fellow Bootstrappers in IRC. On the irc.libera.chat server, in the #bootstrap channel.</li>
+      <li>Implementation help may be found at Stack Overflow (tagged <a href="#">bootstrap-5</a>).
+      </li>
+      <li>Developers should use the keyword bootstrap on packages that modify or add to the functionality of Bootstrap
+        when distributing through<a href="#">npm</a> or similar delivery mechanisms for maximum discoverability.
+      </li>
+    </ul>
+    <p>You can also follow <a href="#">@getbootstrap on Twitter </a>for the latest gossip and awesome music video</p>
+  </div>
+  <!-- mobile-view-end -->
+  <!-- medium devices approach-initial -->
+  <div class="d-none d-sm-none d-md-block d-lg-none d-xl-none d-xxl-none p-4">
+    <div class="d-flex">
+      <div>
+        <div class="row">
+          <div class="col">
+
+            <div class="collapse  multi-collapse" id="multiCollapseExample1">
+              <div class="card  card-body">
+                <ul class="styling">
+                  <li>Introduction</li>
+                  <li>Download</li>
+                  <li>Contents</li>
+                  <li>Browsers & devices</li>
+                  <li>JavaScript</li>
+                  <li>Webpack</li>
+                  <li>Parcel</li>
+                  <li>Accessibiility</li>
+                  <li>RFS</li>
+                  <li>RTL</li>
+                  <li>Contribute</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p>
+          <a class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse"
+            data-bs-target="#getting-started-collapse" aria-expanded="false" aria-current="true">
+            Getting started
+          </a>
+          <!-- <a class="btn btn-light" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Getting started</a> -->
+        </p>
+        <p>
+          <a class="btn btn-light" data-bs-toggle="collapse" href="#multiCollapseExample2" role="button"
+            aria-expanded="false" aria-controls="multiCollapseExample2">Customize</a>
+        </p>
+        <div class="row">
+          <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample2">
+              <div class="card card-body">
+                <ul class="styling">
+                  <li>Overview</li>
+                  <li>Sass</li>
+                  <li>Options</li>
+                  <li>Color</li>
+                  <li>Components</li>
+                  <li>CSS variables</li>
+                  <li>Optimize</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p>
+          <a class="btn btn-light" data-bs-toggle="collapse" href="#multiCollapseExample3" role="button"
+            aria-expanded="false" aria-controls="multiCollapseExample3">Layout</a>
+        </p>
+        <div class="row">
+          <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample3">
+              <div class="card card-body">
+                <ul class="styling">
+                  <li>Breakpoints</li>
+                  <li>Containers</li>
+                  <li>Grid</li>
+                  <li>Columns</li>
+                  <li>Gutters</li>
+                  <li>Utilities</li>
+                  <li>Z-index</li>
+                  <li>CSS Grid</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p>
+          <a class="btn btn-light" data-bs-toggle="collapse" href="#multiCollapseExample4" role="button"
+            aria-expanded="false" aria-controls="multiCollapseExample4">Layout</a>
+        </p>
+        <div class="row">
+          <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample4">
+              <div class="card card-body">
+                <ul class="styling">
+                  <li>Reboot</li>
+                  <li>Typography</li>
+                  <li>Images</li>
+                  <li>Tables</li>
+                  <li>Figures</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p>
+          <a class="btn btn-light" data-bs-toggle="collapse" href="#multiCollapseExample5" role="button"
+            aria-expanded="false" aria-controls="multiCollapseExample5">Forms</a>
+        </p>
+        <div class="row">
+          <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample5">
+              <div class="card card-body">
+                <ul class="styling">
+                  <li>Overview</li>
+                  <li>Form control</li>
+                  <li>Select</li>
+                  <li>Checks & radios</li>
+                  <li>Range</li>
+                  <li>Input group</li>
+                  <li>Floating labels</li>
+                  <li>Layout</li>
+                  <li>Validation</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p>
+          <a class="btn btn-light" data-bs-toggle="collapse" href="#multiCollapseExample6" role="button"
+            aria-expanded="false" aria-controls="multiCollapseExample6">Components</a>
+        </p>
+        <div class="row">
+          <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample6">
+              <div class="card card-body">
+                <ul class="styling">
+                  <li>Accordion</li>
+                  <li>Alerts</li>
+                  <li>Badge</li>
+                  <li>Breadcrumb</li>
+                  <li>Buttons</li>
+                  <li>groupButton </li>
+                  <li>Card</li>
+                  <li>Close button</li>
+                  <li>Collapse</li>
+                  <li>Dropdowns</li>
+                  <li>List group</li>
+                  <li>Modal</li>
+                  <li>Navs & tabs</li>
+                  <li>Navbar</li>
+                  <li>Offcanvas</li>
+                  <li>Pagination</li>
+                  <li>Placeholders</li>
+                  <li>Popovers</li>
+                  <li>Progress</li>
+                  <li>Scrollspy</li>
+                  <li>Spinners</li>
+                  <li>Toasts</li>
+                  <li>Tooltips</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p>
+          <a class="btn btn-light" data-bs-toggle="collapse" href="#multiCollapseExample7" role="button"
+            aria-expanded="false" aria-controls="multiCollapseExample7">Helpers</a>
+        </p>
+        <div class="row">
+          <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample7">
+              <div class="card card-body">
+                <ul class="styling">
+                  <li>Clearfix</li>
+                  <li>Colred links</li>
+                  <li>Ratio</li>
+                  <li>Position</li>
+                  <li>Stacks</li>
+                  <li>Visually hidden</li>
+                  <li>Stretched link</li>
+                  <li>Text truncation</li>
+                  <li>Vertical rule</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p>
+          <a class="btn btn-light" data-bs-toggle="collapse" href="#multiCollapseExample8" role="button"
+            aria-expanded="false" aria-controls="multiCollapseExample8">Utilities</a>
+        </p>
+        <div class="row">
+          <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample8">
+              <div class="card card-body">
+                <ul class="styling">
+                  <li>API</li>
+                  <li>Background</li>
+                  <li>Borders</li>
+                  <li>Colors</li>
+                  <li>Display</li>
+                  <li>Flex</li>
+                  <li>Float</li>
+                  <li>Interactions</li>
+                  <li>Opacity</li>
+                  <li>Overflow</li>
+                  <li>Position</li>
+                  <li>Shadowns</li>
+                  <li>Sizing</li>
+                  <li>Spacing</li>
+                  <li>Text</li>
+                  <li>Vertical align</li>
+                  <li>Visibility</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p>
+          <a class="btn btn-light" data-bs-toggle="collapse" href="#multiCollapseExample9" role="button"
+            aria-expanded="false" aria-controls="multiCollapseExample9">Extend</a>
+        </p>
+        <div class="row">
+          <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample9">
+              <div class="card card-body">
+                <ul class="styling">
+                  <li>Approach</li>
+                  <li>Icons</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <p>
+            <a class="btn btn-light" data-bs-toggle="collapse" href="#multiCollapseExample10" role="button"
+              aria-expanded="false" aria-controls="multiCollapseExample10">About</a>
+          </p>
+          <div class="row">
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapseExample10">
+                <div class="card card-body">
+                  <ul class="styling">
+                    <li>Overview</li>
+                    <li>Team</li>
+                    <li>Brand</li>
+                    <li>License</li>
+                    <li>Translations</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <h6>Migration</h6>
+        </div>
+      </div>
+      <div class="container-portion-two">
+        <div>
+          <div class="container d-none d-sm-none d-md-block d-lg-none d-xl-none d-xxl-none">
+            <button class="button-view-on-github d-md-none d-lg-none d-xl-none d-xxl-none mt-3">View on Github</button>
+            <div class="flexing">
+              <h1 class="pt-3 pb-3"><b>Introduction</b></h1>
+              <button class="button-view-on-github d-none d-sm-none d-md-inline d-lg-none d-xl-none d-xxl-none">View on
+                Github</button>
+            </div>
+            <p>Get started with Bootstrap, the world’s most
+              popular framework for building responsive, mobile-first sites,
+              with jsDelivr and a template starter page.</p>
+            <div class="d-flex bg-light p-3 m-4">
+              <img src="https://cdn4.buysellads.net/uu/1/3386/1525189943-38523.png" width="150px" height="100px" />
+              <p class="p-2">Limited time offer: Get 10 free Adobe Stock images.<br />
+                ads via Carbon</p>
+            </div>
+          </div>
+        </div>
+        <div class="d-none d-sm-none d-md-block d-lg-none d-xl-none d-xxl-none">
+          <h6>On this page</h6>
+          <hr />
+          <ul class="styling">
+            <li>Quick start</li>
+            <ul class="styling">
+              <li>CSS</li>
+              <li>JS</li>
+              <ul class="styling">
+                <li>Bundle</li>
+                <li>Separate</li>
+                <li>Modules</li>
+                <li>Components</li>
+              </ul>
+            </ul>
+          </ul>
+          <ul class="styling">
+            <li>Starter template</li>
+            <li>Important globals</li>
+            <ul class="styling">
+              <li>HTML5 DOCTYPE</li>
+              <li>Responsive meta tag</li>
+              <li>Box-sizing</li>
+              <li>Reboot</li>
+            </ul>
+          </ul>
+          <ul class="styling">
+            <li>Community</li>
+          </ul>
+        </div>
+        <div class="container  d-none d-sm-none d-md-block d-lg-none d-xl-none d-xxl-none pt-3">
+          <h4><b>Quick start</b>
+          </h4>
+          <p>Looking to quickly add Bootstrap to your project? Use jsDelivr, a free open source CDN. Using a package
+            <br />
+            manager or need to download the source files? <a href="#">Head to the downloads page</a>.</p>
+          <h4><b>CSS</b></h4>
+          <p>Copy-paste the stylesheet into your before all other stylesheets to load our CSS.</p>
+          <div class="bg-light p-2">
+            <div class="d-flex flex-direction-row justify-content-end">
+              <button type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="copy">
+                copy
+              </button>
+            </div>
+            <p><a href="#">link href</a>=<span>"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+              </span><a href="#">rel</a>=<span>"stylesheet"
+                integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"</span>
+              crossorigin="anonymous"</p>
+          </div>
+          <h4 class="pt-3">JS</h4>
+          <p>Many of our components require the use of JavaScript to function. Specifically, they require our own
+            JavaScript<br /> plugins and <a href="#">Popper</a>. Place <b>one of the followings </b>near the end of your
+            pages, right before the closing<br /> tag, to enable them.
+
+          </p>
+          <h4 class="pt-3">Bundle</h4>
+          <p>Include every Bootstrap JavaScript plugin and dependency with one of our two bundles. Both<br />
+            bootstrap.bundle.js and bootstrap.bundle.min.js include Popper for our tooltips and popovers. For more<br />
+            information about what’s included in Bootstrap, please see our contents section.</p>
+          <div class="bg-light p-2">
+            <div class="d-flex flex-direction-row justify-content-end">
+              <button type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="copy">
+                copy
+              </button>
+            </div>
+            <p><a href="#">link href</a>=<span>"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+              </span><a href="#">rel</a>=<span>"stylesheet"
+                integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"</span>
+              crossorigin="anonymous"</p>
+          </div>
+          <h4 class="pt-3">Separate</h4>
+          <p>If you decide to go with the separate scripts solution, Popper must come first (if you’re using tooltips or
+            popovers), and then our JavaScript plugins.</p>
+          <div class="bg-light p-2">
+            <div class="d-flex flex-direction-row justify-content-end">
+              <button type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="copy">
+                copy
+              </button>
+            </div>
+            <p><a href="#">link href</a>=<span>"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+              </span><a href="#">rel</a>=<span>"stylesheet"
+                integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"</span>
+              crossorigin="anonymous"</p>
+          </div>
+          <h4 class="pt-3">Modules</h4>
+          <p><span>If you see script type ="modules"</span>,please refer to out<a href="#">using Bootstrap as a
+              module</a>
+          </p>
+          <h4 class="pt-3">Components</h4>
+          <p>Curious which components explicitly require our JavaScript and Popper? Click the show components link<br />
+            below. If you’re at all unsure about the general page structure, keep reading for an example page template.
+          </p>
+          <a href="#">Show components requiring JavaScript</a>
+          <h1 class="pt-3">Starter template</h1>
+          <p>Be sure to have your pages set up with the latest design and development standards. That means using an
+            <br />HTML5 doctype and including a viewport meta tag for proper responsive behaviors. Put it all together
+            and
+            your<br /> pages should look like this:
+          </p>
+          <div class="bg-light p-2">
+            <div class="d-flex flex-direction-row justify-content-end">
+              <button type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="copy">
+                copy
+              </button>
+            </div>
+            <p><a href="#">link href</a>=<span>"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+              </span><a href="#">rel</a>=<span>"stylesheet"
+                integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"</span>
+              crossorigin="anonymous"
+
+
+              meta charset="utf-8"
+              meta name="viewport" content="width=device-width, initial-scale=1"
+
+
+              link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+              integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+              crossorigin="anonymous">
+
+              script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+              integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+              crossorigin="anonymous">
+              </script>
+            </p>
+          </div>
+          <p>For next steps, visit the <a href="#">Layout docs </a>or<a href="#">our official</a> examples to start
+            laying
+            out your site’s content and components.</p>
+          <h4>Important globals</h4>
+          <p>Bootstrap employs a handful of important global styles and settings that you’ll need to be aware of when
+            using
+            <br />it, all of which are almost exclusively geared towards the normalization of cross browser styles.
+            Let’s
+            dive in.
+          </p>
+          <h4 class="pt-3">HTML5 doctype</h4>
+          <p>Bootstrap requires the use of the HTML5 doctype. Without it, you’ll see some funky incomplete styling,
+            but<br /> including it shouldn’t cause any considerable hiccups.</p>
+          <div class="bg-light p-2">
+            <div class="d-flex flex-direction-row justify-content-end">
+              <button type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="copy">
+                copy
+              </button>
+            </div>
+            <p><a href="#">link href</a>=<span>"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+              </span><a href="#">rel</a>=<span>"stylesheet"
+                integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"</span>
+              crossorigin="anonymous"</p>
+          </div>
+          <h4 class="pt-3">Responsive meta tag</h4>
+          <p>Bootstrap is developed mobile first, a strategy in which we optimize code for mobile devices first and then
+            <br />scale up components as necessary using CSS media queries. To ensure proper rendering and touch zooming
+            <br />for all devices, add the responsive viewport meta tag to your
+          </p>
+          <div class="bg-light p-2">
+            <div class="d-flex flex-direction-row justify-content-end">
+              <button type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="copy">
+                copy
+              </button>
+            </div>
+            <p><a href="#">link href</a>=<span>"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+              </span><a href="#">rel</a>=<span>"stylesheet"
+                integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"</span>
+              crossorigin="anonymous"</p>
+          </div>
+          <p>You can see an example of this in action in the <a href="#">starter template.</a></p>
+          <h4 class="pt-3">Box-sizing</h4>
+          <p>For more straightforward sizing in CSS, we switch the global box-sizing value from content-box to
+            border-box.
+            This ensures padding does not affect the final computed width of an element, but it can cause problems with
+            some
+            third-party software like Google Maps and Google Custom Search Engine</p>
+          <p>On the rare occasion you need to override it, use something like the following:</p>
+          <div class="bg-light p-2">
+            <div class="d-flex flex-direction-row justify-content-end">
+              <button type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="copy">
+                copy
+              </button>
+            </div>
+            <p><a href="#">link href</a>=<span>"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+              </span><a href="#">rel</a>=<span>"stylesheet"
+                integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"</span>
+              crossorigin="anonymous"</p>
+          </div>
+          <p>With the above snippet, nested elements—including generated content via ::before and ::after—will all
+            inherit
+            the specified box-sizing for that .selector-for-some-widget.
+
+          </p>
+          <p>Learn more about <a href="#">box model and sizing at CSS Tricks</a></p>
+          <h4 class="pt-3">Reboot</h4>
+          <p>For improved cross-browser rendering, we use <a href="#">Reboot</a> to correct inconsistencies across
+            browsers
+            and devices while providing slightly more opinionated resets to common HTML elements.</p>
+          <h4>Community</h4>
+          <p>
+            Stay up to date on the development of Bootstrap and reach out to the community with these helpful resources.
+          </p>
+          <ul>
+            <li>Read and subscribe to<a href="#"> The Official Bootstrap Blog.</a></a>li>
+            <li>Join <a href="#">the official Slack room.</a></li>
+            <li>Chat with fellow Bootstrappers in IRC. On the irc.libera.chat server, in the #bootstrap channel.</li>
+            <li>Implementation help may be found at Stack Overflow (tagged <a href="#">bootstrap-5</a>).
+            </li>
+            <li>Developers should use the keyword bootstrap on packages that modify or add to the functionality of
+              Bootstrap
+              when distributing through<a href="#">npm</a> or similar delivery mechanisms for maximum discoverability.
+            </li>
+          </ul>
+          <p>You can also follow <a href="#">@getbootstrap on Twitter </a>for the latest gossip and awesome music
+            videos.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- medium devices approach-end -->
+  <div class="d-flex p-5">
+    <div class="container-portion-one d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block">
+      <p>
+        <a class="btn btn-light" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button"
+          aria-expanded="false" aria-controls="multiCollapseExample1">Getting started</a>
+      </p>
+      <div class="row">
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample1">
+            <div class="card card-body">
+              <ul class="styling">
+                <li>Introduction</li>
+                <li>Download</li>
+                <li>Contents</li>
+                <li>Browsers & devices</li>
+                <li>JavaScript</li>
+                <li>Webpack</li>
+                <li>Parcel</li>
+                <li>Accessibiility</li>
+                <li>RFS</li>
+                <li>RTL</li>
+                <li>Contribute</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p>
+        <a class="btn btn-light" data-bs-toggle="collapse" href="#multiCollapseExample2" role="button"
+          aria-expanded="false" aria-controls="multiCollapseExample2">Customize</a>
+      </p>
+      <div class="row">
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample2">
+            <div class="card card-body">
+              <ul class="styling">
+                <li>Overview</li>
+                <li>Sass</li>
+                <li>Options</li>
+                <li>Color</li>
+                <li>Components</li>
+                <li>CSS variables</li>
+                <li>Optimize</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <p>
+        <a class="btn btn-light" data-bs-toggle="collapse" href="#multiCollapseExample3" role="button"
+          aria-expanded="false" aria-controls="multiCollapseExample3">Layout</a>
+      </p>
+      <div class="row">
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample3">
+            <div class="card card-body">
+              <ul class="styling">
+                <li>Breakpoints</li>
+                <li>Containers</li>
+                <li>Grid</li>
+                <li>Columns</li>
+                <li>Gutters</li>
+                <li>Utilities</li>
+                <li>Z-index</li>
+                <li>CSS Grid</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <p>
+        <a class="btn btn-light" data-bs-toggle="collapse" href="#multiCollapseExample4" role="button"
+          aria-expanded="false" aria-controls="multiCollapseExample4">Layout</a>
+      </p>
+      <div class="row">
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample4">
+            <div class="card card-body">
+              <ul class="styling">
+                <li>Reboot</li>
+                <li>Typography</li>
+                <li>Images</li>
+                <li>Tables</li>
+                <li>Figures</li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p>
+        <a class="btn btn-light" data-bs-toggle="collapse" href="#multiCollapseExample5" role="button"
+          aria-expanded="false" aria-controls="multiCollapseExample5">Forms</a>
+      </p>
+      <div class="row">
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample5">
+            <div class="card card-body">
+              <ul class="styling">
+                <li>Overview</li>
+                <li>Form control</li>
+                <li>Select</li>
+                <li>Checks & radios</li>
+                <li>Range</li>
+                <li>Input group</li>
+                <li>Floating labels</li>
+                <li>Layout</li>
+                <li>Validation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p>
+        <a class="btn btn-light" data-bs-toggle="collapse" href="#multiCollapseExample6" role="button"
+          aria-expanded="false" aria-controls="multiCollapseExample6">Components</a>
+      </p>
+      <div class="row">
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample6">
+            <div class="card card-body">
+              <ul class="styling">
+                <li>Accordion</li>
+                <li>Alerts</li>
+                <li>Badge</li>
+                <li>Breadcrumb</li>
+                <li>Buttons</li>
+                <li>groupButton </li>
+                <li>Card</li>
+                <li>Close button</li>
+                <li>Collapse</li>
+                <li>Dropdowns</li>
+                <li>List group</li>
+                <li>Modal</li>
+                <li>Navs & tabs</li>
+                <li>Navbar</li>
+                <li>Offcanvas</li>
+                <li>Pagination</li>
+                <li>Placeholders</li>
+                <li>Popovers</li>
+                <li>Progress</li>
+                <li>Scrollspy</li>
+                <li>Spinners</li>
+                <li>Toasts</li>
+                <li>Tooltips</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p>
+        <a class="btn btn-light" data-bs-toggle="collapse" href="#multiCollapseExample7" role="button"
+          aria-expanded="false" aria-controls="multiCollapseExample7">Helpers</a>
+      </p>
+      <div class="row">
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample7">
+            <div class="card card-body">
+              <ul class="styling">
+                <li>Clearfix</li>
+                <li>Colred links</li>
+                <li>Ratio</li>
+                <li>Position</li>
+                <li>Stacks</li>
+                <li>Visually hidden</li>
+                <li>Stretched link</li>
+                <li>Text truncation</li>
+                <li>Vertical rule</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p>
+        <a class="btn btn-light" data-bs-toggle="collapse" href="#multiCollapseExample8" role="button"
+          aria-expanded="false" aria-controls="multiCollapseExample8">Utilities</a>
+      </p>
+      <div class="row">
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample8">
+            <div class="card card-body">
+              <ul class="styling">
+                <li>API</li>
+                <li>Background</li>
+                <li>Borders</li>
+                <li>Colors</li>
+                <li>Display</li>
+                <li>Flex</li>
+                <li>Float</li>
+                <li>Interactions</li>
+                <li>Opacity</li>
+                <li>Overflow</li>
+                <li>Position</li>
+                <li>Shadowns</li>
+                <li>Sizing</li>
+                <li>Spacing</li>
+                <li>Text</li>
+                <li>Vertical align</li>
+                <li>Visibility</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p>
+        <a class="btn btn-light" data-bs-toggle="collapse" href="#multiCollapseExample9" role="button"
+          aria-expanded="false" aria-controls="multiCollapseExample9">Extend</a>
+      </p>
+      <div class="row">
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample9">
+            <div class="card card-body">
+              <ul class="styling">
+                <li>Approach</li>
+                <li>Icons</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p>
+        <a class="btn btn-light" data-bs-toggle="collapse" href="#multiCollapseExample10" role="button"
+          aria-expanded="false" aria-controls="multiCollapseExample10">About</a>
+      </p>
+      <div class="row">
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample10">
+            <div class="card card-body">
+              <ul class="styling">
+                <li>Overview</li>
+                <li>Team</li>
+                <li>Brand</li>
+                <li>License</li>
+                <li>Translations</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <h6>Migration</h6>
+    </div>
+    <div class="container-portion-two d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block">
+      <div class="flexing">
+        <h1><b>Introduction</b></h1>
+        <button class="button-view-on-github d-none d-sm-none d-md-inline d-lg-inline d-xl-inline d-xxl-inline">View on
+          Github</button>
+      </div>
+      <p>Get started with Bootstrap, the world’s most
+        popular framework for building responsive, mobile-first sites,
+        with jsDelivr and a template starter page.</p>
+      <div class="d-none d-sm-none d-md-block d-lg-block d-xl-block d-xxl-block">
+        <div class="bg-light d-flex p-4 container-two shadow-sm mt-4 mb-4">
+          <img
+            src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRuVCctFgr2q4Km8fODyKxjmxWHsJr5FnFf-v1uL50_46oAVw0x"
+            class="image">
+          <p>Adobe Creative Cloud for Team starting at $33.99
+            per month.ads via Carbon
+          </p>
+        </div>
+      </div>
+      <div class="card-container-for-mobile-view bg-light d-block d-sm-block d-md-none d-lg-none d-xl-none d-xxl-none">
+        <div class="d-flex">
+          <img
+            src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRuVCctFgr2q4Km8fODyKxjmxWHsJr5FnFf-v1uL50_46oAVw0x"
+            width="180px" height="140px" />
+          <p>Adobe Creative Cloud for Team starting at $33.99 per month.ads via Carbon</p>
+        </div>
+      </div>
+      <h4><b>Quick start</b></h4>
+      <p>Looking to quickly add Bootstrap to your project? Use jsDelivr, a free open source CDN. Using a package <br />
+        manager or need to download the source files? <a href="#">Head to the downloads page</a>.</p>
+      <h4><b>CSS</b></h4>
+      <p>Copy-paste the stylesheet into your before all other stylesheets to load our CSS.</p>
+      <div class="bg-light p-2">
+        <div class="d-flex flex-direction-row justify-content-end">
+          <button type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top"
+            title="copy">
+            copy
+          </button>
+        </div>
+        <p><a href="#">link href</a>=<span>"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          </span><a href="#">rel</a>=<span>"stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"</span>
+          crossorigin="anonymous"</p>
+      </div>
+      <h4>JS</h4>
+      <p>Many of our components require the use of JavaScript to function. Specifically, they require our own
+        JavaScript<br /> plugins and <a href="#">Popper</a>. Place <b>one of the followings </b>near the end of your
+        pages, right before the closing<br /> tag, to enable them.
+
+      </p>
+      <h4>Bundle</h4>
+      <p>Include every Bootstrap JavaScript plugin and dependency with one of our two bundles. Both<br />
+        bootstrap.bundle.js and bootstrap.bundle.min.js include Popper for our tooltips and popovers. For more<br />
+        information about what’s included in Bootstrap, please see our contents section.</p>
+      <div class="bg-light p-2">
+        <div class="d-flex flex-direction-row justify-content-end">
+          <button type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top"
+            title="copy">
+            copy
+          </button>
+        </div>
+        <p><a href="#">link href</a>=<span>"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          </span><a href="#">rel</a>=<span>"stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"</span>
+          crossorigin="anonymous"</p>
+      </div>
+      <h4>Separate</h4>
+      <p>If you decide to go with the separate scripts solution, Popper must come first (if you’re using tooltips or
+        popovers), and then our JavaScript plugins.</p>
+      <div class="bg-light p-2">
+        <div class="d-flex flex-direction-row justify-content-end">
+          <button type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top"
+            title="copy">
+            copy
+          </button>
+        </div>
+        <p><a href="#">link href</a>=<span>"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          </span><a href="#">rel</a>=<span>"stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"</span>
+          crossorigin="anonymous"</p>
+      </div>
+      <h4>Modules</h4>
+      <p><span>If you see script type ="modules"</span>,please refer to out<a href="#">using Bootstrap as a module</a>
+      </p>
+      <h4>Components</h4>
+      <p>Curious which components explicitly require our JavaScript and Popper? Click the show components link<br />
+        below. If you’re at all unsure about the general page structure, keep reading for an example page template.</p>
+      <a href="#">Show components requiring JavaScript</a>
+      <h1>Starter template</h1>
+      <p>Be sure to have your pages set up with the latest design and development standards. That means using an
+        <br />HTML5 doctype and including a viewport meta tag for proper responsive behaviors. Put it all together and
+        your<br /> pages should look like this:
+      </p>
+      <div class="bg-light p-2">
+        <div class="d-flex flex-direction-row justify-content-end">
+          <button type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top"
+            title="copy">
+            copy
+          </button>
+        </div>
+        <p><a href="#">link href</a>=<span>"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          </span><a href="#">rel</a>=<span>"stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"</span>
+          crossorigin="anonymous"
+          meta charset="utf-8"
+          meta name="viewport" content="width=device-width, initial-scale=1"
+          link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+          script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+          </script>
+        </p>
+      </div>
+      <p>For next steps, visit the <a href="#">Layout docs </a>or<a href="#">our official</a> examples to start laying
+        out your site’s content and components.</p>
+      <h4>Important globals</h4>
+      <p>Bootstrap employs a handful of important global styles and settings that you’ll need to be aware of when using
+        <br />it, all of which are almost exclusively geared towards the normalization of cross browser styles. Let’s
+        dive in.
+      </p>
+      <h4>HTML5 doctype</h4>
+      <p>Bootstrap requires the use of the HTML5 doctype. Without it, you’ll see some funky incomplete styling,
+        but<br /> including it shouldn’t cause any considerable hiccups.</p>
+      <div class="bg-light p-2">
+        <div class="d-flex flex-direction-row justify-content-end">
+          <button type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top"
+            title="copy">
+            copy
+          </button>
+        </div>
+        <p><a href="#">link href</a>=<span>"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          </span><a href="#">rel</a>=<span>"stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"</span>
+          crossorigin="anonymous"</p>
+      </div>
+      <h4>Responsive meta tag</h4>
+      <p>Bootstrap is developed mobile first, a strategy in which we optimize code for mobile devices first and then
+        <br />scale up components as necessary using CSS media queries. To ensure proper rendering and touch zooming
+        <br />for all devices, add the responsive viewport meta tag to your
+      </p>
+      <div class="bg-light p-2">
+        <div class="d-flex flex-direction-row justify-content-end">
+          <button type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top"
+            title="copy">
+            copy
+          </button>
+        </div>
+        <p><a href="#">link href</a>=<span>"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          </span><a href="#">rel</a>=<span>"stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"</span>
+          crossorigin="anonymous"</p>
+      </div>
+      <p>You can see an example of this in action in the <a href="#">starter template.</a></p>
+      <h4>Box-sizing</h4>
+      <p>For more straightforward sizing in CSS, we switch the global box-sizing value from content-box to border-box.
+        This ensures padding does not affect the final computed width of an element, but it can cause problems with some
+        third-party software like Google Maps and Google Custom Search Engine</p>
+      <p>On the rare occasion you need to override it, use something like the following:</p>
+      <div class="bg-light p-2">
+        <div class="d-flex flex-direction-row justify-content-end">
+          <button type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top"
+            title="copy">
+            copy
+          </button>
+        </div>
+        <p><a href="#">link href</a>=<span>"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          </span><a href="#">rel</a>=<span>"stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"</span>
+          crossorigin="anonymous"</p>
+      </div>
+      <p>With the above snippet, nested elements—including generated content via ::before and ::after—will all inherit
+        the specified box-sizing for that .selector-for-some-widget.</p>
+      <p>Learn more about <a href="#">box model and sizing at CSS Tricks</a></p>
+      <h4>Reboot</h4>
+      <p>For improved cross-browser rendering, we use <a href="#">Reboot</a> to correct inconsistencies across browsers
+        and devices while providing slightly more opinionated resets to common HTML elements.</p>
+      <h4>Community</h4>
+      <p>Stay up to date on the development of Bootstrap and reach out to the community with these helpful resources.
+      </p>
+      <ul>
+        <li>Read and subscribe to<a href="#"> The Official Bootstrap Blog.</a></a>li>
+        <li>Join <a href="#">the official Slack room.</a></li>
+        <li>Chat with fellow Bootstrappers in IRC. On the irc.libera.chat server, in the #bootstrap channel.</li>
+        <li>Implementation help may be found at Stack Overflow (tagged <a href="#">bootstrap-5</a>).
+        </li>
+        <li>Developers should use the keyword bootstrap on packages that modify or add to the functionality of Bootstrap
+          when distributing through<a href="#">npm</a> or similar delivery mechanisms for maximum discoverability.
+        </li>
+      </ul>
+      <p>You can also follow <a href="#">@getbootstrap on Twitter </a>for the latest gossip and awesome music videos.
+      </p>
+    </div>
+    <!-- on this page portion -->
+    <div class="container-portion-three d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block">
+      <h6>On this page</h6>
+      <hr />
+      <ul class="styling">
+        <li>Quick start</li>
+        <ul class="styling">
+          <li>CSS</li>
+          <li>JS</li>
+          <ul class="styling">
+            <li>Bundle</li>
+            <li>Separate</li>
+            <li>Modules</li>
+            <li>Components</li>
+          </ul>
+        </ul>
+      </ul>
+      <ul class="styling">
+        <li>Starter template</li>
+        <li>Important globals</li>
+        <ul class="styling">
+          <li>HTML5 DOCTYPE</li>
+          <li>Responsive meta tag</li>
+          <li>Box-sizing</li>
+          <li>Reboot</li>
+        </ul>
+      </ul>
+      <ul class="styling">
+        <li>Community</li>
+      </ul>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="footer bg-light">
+    <div class="pt-4">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2 col-xxl-2">
+          <div class="d-flex">
+            <img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo-black.svg" class="logo mr-4" />
+            <h5>Bootstrap</h5>
+          </div>
+          <div>
+            <p class="pt-4">Designed and built with all the love in the world by the Bootstrap team with the help of our
+              contributors.
+              Code licensed MIT, docs CC BY 3.0.
+              Currently v5.1.3.</p>
+          </div>
+        </div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-2 col-xl-2 col-xxl-2">
+          <ul class="styling">
+            <h6><b>Links</b></h6>
+            <li class="mb-2 list">home</li>
+            <li class="mb-2 list">Docs</li>
+            <li class="mb-2 list">Examples</li>
+            <li class="mb-2 list">Themes</li>
+            <li class="mb-2 list">Blog</li>
+          </ul>
+        </div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-2 col-xl-2 col-xxl-2">
+          <ul class="styling">
+            <h6><b>Guides</b></h6>
+            <li class="mb-2 list">Getting started</li>
+            <li class="mb-2 list">Starter Template</li>
+            <li>Webpack</li>
+            <li class="mb-2 list">Parcel</li>
+          </ul>
+        </div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-2 col-xl-2 col-xxl-2">
+          <ul class="styling">
+            <h6><b>Projects</b></h6></a>
+            <li class="mb-2 list">Bootstrap 5</li>
+            <li class="mb-2 list">Bootstrap 4</li>
+            <li class="mb-2 list">Examples</li>
+            <li class="mb-2 list">Icons</li>
+            <li class="mb-2 list">RFS</li>
+            <li class="mb-2 list">npm starter</li>
+          </ul>
+        </div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-2 col-xl-2 col-xxl-2">
+          <ul class="styling">
+            <h6><b>Community</b></h6>
+            <li class="mb-2 list">Issues</li>
+            <li class="mb-2 list">Discussions</li>
+            <li class="mb-2 list">Corporate sponsors</li>
+            <li class="mb-2 list">Open Collective</li>
+            <li class="mb-2 list">Slack</li>
+            <li class="mb-2 list">Stack Overflow</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

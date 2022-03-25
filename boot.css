@@ -1,0 +1,112 @@
+.logo{
+    height: 40px;
+    width: 40px;
+}
+.nav-color{
+    background-color: #7952b3;
+    color: aliceblue;
+    padding: .75rem 0;
+}
+#home{
+    font-size: 12px;
+    color: aliceblue;
+}
+#docs{
+    font-size: 12px;
+    color: aliceblue;
+}
+#examples{
+    font-size: 12px;
+    color: aliceblue;
+}
+#icons{
+    font-size: 12px;
+    color: aliceblue;
+}
+#themes{
+    font-size: 12px;
+    color: aliceblue;
+}
+#blog{
+    font-size: 12px;
+    color: aliceblue;
+}
+.icon-color{
+    color: azure;
+    height: 20px;
+    width: 20px;
+}
+.flexing{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.items{
+    padding-left: 10px;
+}
+.select-border{
+    border: 0px white ;
+}
+.styling{
+    list-style-type: none;
+}
+.button-view-on-github{
+    height: 30px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 3px;
+}
+.button-view-on-github:hover{
+    border: 1px solid #7952b3;
+}
+.image{
+    margin-right: 20px;
+    height: 100px;
+    width: 120px;
+}
+.middle-container{
+    height: 100%;
+}
+
+.container-two{
+    width: 50%;
+    border-radius: 5px;
+    border: 1px solid light;
+}
+.spacing{
+    display: flex;
+}
+.container-portion-one{
+    width: 15%;
+}
+.container-portion-one-for-md{
+    width: 20%;
+}
+.container-portion-two{
+    width: 70%;
+}
+.container-portion-two-for-md {
+    width: 75%;
+}
+.container-portion-three{
+    width: 15%;
+    padding: 30px;
+}
+span{
+    color: #b01c3f;
+}
+.container-portion-two{
+    height: 700px;
+    overflow-y: scroll;
+}
+.list:hover{
+    color: blue;
+    text-decoration: underline;
+}
+footer{
+    padding: 40px;
+}
+li:hover{
+    color: black;
+    text-decoration: underline;
+}
