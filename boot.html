@@ -16,7 +16,7 @@
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark nav-color">
-      <div class="container-fluid">
+      <div class="container">
         <a class="navbar-brand" href="#">
           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="d-block my-1" viewBox="0 0 118 94"
             role="img">
@@ -61,7 +61,9 @@
       </div>
     </nav>
   </header>
-  <div class="p-2 border-bottom flexing shadow">
+  <div class="p-4 border-bottom flexing shadow">
+
+
     <input type="seacrch" placeholder="search docs...   Ctrl+/">
     <div>
       <div class="dropdown">
@@ -81,21 +83,22 @@
         </ul>
       </div>
     </div>
+
   </div>
   <!-- Mobile-view-initial etra small to small approach-->
-  <div class="d-block d-sm-block d-md-none d-lg-none d-xl-none d-xxl-none p-2">
+  <div class=" d-block d-sm-block d-md-none d-lg-none d-xl-none d-xxl-none p-5">
     <button class="button-view-on-github d-md-none d-lg-none d-xl-none d-xxl-none mt-3">View on Github</button>
     <h1 class="pt-3 pb-3"><b>Introduction</b></h1>
     <p>Get started with Bootstrap, the world’s most
       popular framework for building responsive, mobile-first sites,
       with jsDelivr and a template starter page.</p>
-    <div class="d-flex bg-light p-3 m-4">
+    <div class="d-flex bg-light m-4">
       <img src="https://cdn4.buysellads.net/uu/1/3386/1525189943-38523.png" width="150px" height="100px" />
       <p class="p-2">Limited time offer: Get 10 free Adobe Stock images.<br />
         ads via Carbon</p>
     </div>
   </div>
-  <div class="d-block d-sm-block d-md-none d-lg-none d-xl-none d-xxl-none">
+  <div class="p-5 d-block d-sm-block d-md-none d-lg-none d-xl-none d-xxl-none">
     <h6>On this page</h6>
     <hr />
     <ul class="styling">
@@ -125,21 +128,22 @@
       <li>Community</li>
     </ul>
   </div>
-  <div class="d-block d-sm-block d-md-none d-lg-none d-xl-none d-xxl-none pt-3">
+  <div class="d-block d-sm-block d-md-none d-lg-none d-xl-none d-xxl-none p-5">
     <h4><b>Quick start</b>
     </h4>
     <p>Looking to quickly add Bootstrap to your project? Use jsDelivr, a free open source CDN. Using a package <br />
       manager or need to download the source files? <a href="#">Head to the downloads page</a>.</p>
     <h4><b>CSS</b></h4>
     <p>Copy-paste the stylesheet into your before all other stylesheets to load our CSS.</p>
-    <div class="bg-light p-2">
+    <div class="bg-light wrapping">
       <div class="d-flex flex-direction-row justify-content-end">
         <button type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top"
           title="copy">
           copy
         </button>
       </div>
-      <p><a href="#">link href</a>=<span>"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      <p class="p-4"><a href="#">link
+          href</a>=<span>"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
         </span><a href="#">rel</a>=<span>"stylesheet"
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"</span>
         crossorigin="anonymous"</p>
@@ -154,7 +158,7 @@
     <p>Include every Bootstrap JavaScript plugin and dependency with one of our two bundles. Both<br />
       bootstrap.bundle.js and bootstrap.bundle.min.js include Popper for our tooltips and popovers. For more<br />
       information about what’s included in Bootstrap, please see our contents section.</p>
-    <div class="bg-light p-2">
+    <div class="bg-light wrapping p-2">
       <div class="d-flex flex-direction-row justify-content-end">
         <button type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top"
           title="copy">
@@ -169,7 +173,7 @@
     <h4 class="pt-3">Separate</h4>
     <p>If you decide to go with the separate scripts solution, Popper must come first (if you’re using tooltips or
       popovers), and then our JavaScript plugins.</p>
-    <div class="bg-light p-2">
+    <div class="bg-light wrapping p-2">
       <div class="d-flex flex-direction-row justify-content-end">
         <button type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top"
           title="copy">
@@ -193,7 +197,7 @@
       <br />HTML5 doctype and including a viewport meta tag for proper responsive behaviors. Put it all together and
       your<br /> pages should look like this:
     </p>
-    <div class="bg-light p-2">
+    <div class="bg-light wrapping p-2">
       <div class="d-flex flex-direction-row justify-content-end">
         <button type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top"
           title="copy">
@@ -228,7 +232,7 @@
     <h4 class="pt-3">HTML5 doctype</h4>
     <p>Bootstrap requires the use of the HTML5 doctype. Without it, you’ll see some funky incomplete styling,
       but<br /> including it shouldn’t cause any considerable hiccups.</p>
-    <div class="bg-light p-2">
+    <div class="bg-light wrapping p-2">
       <div class="d-flex flex-direction-row justify-content-end">
         <button type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top"
           title="copy">
@@ -245,7 +249,7 @@
       <br />scale up components as necessary using CSS media queries. To ensure proper rendering and touch zooming
       <br />for all devices, add the responsive viewport meta tag to your
     </p>
-    <div class="bg-light p-2">
+    <div class="bg-light wrapping p-2">
       <div class="d-flex flex-direction-row justify-content-end">
         <button type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top"
           title="copy">
@@ -263,7 +267,7 @@
       This ensures padding does not affect the final computed width of an element, but it can cause problems with some
       third-party software like Google Maps and Google Custom Search Engine</p>
     <p>On the rare occasion you need to override it, use something like the following:</p>
-    <div class="bg-light p-2">
+    <div class="bg-light wrapping p-2">
       <div class="d-flex flex-direction-row justify-content-end">
         <button type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top"
           title="copy">
@@ -301,20 +305,23 @@
   </div>
   <!-- mobile-view-end -->
   <!-- medium devices approach-initial -->
-  <div class="d-none d-sm-none d-md-block d-lg-none d-xl-none d-xxl-none p-4">
+  <div class=" container d-none d-sm-none d-md-block d-lg-none d-xl-none d-xxl-none p-4">
     <div class="d-flex">
       <div>
+
+        <p>
+          <a class="btn btn-light" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button"
+            aria-expanded="false" aria-controls="multiCollapseExample1">Getting started</a>
+        </p>
         <div class="row">
           <div class="col">
-
-            <div class="collapse  multi-collapse" id="multiCollapseExample1">
-              <div class="card  card-body">
+            <div class="collapse multi-collapse" id="multiCollapseExample1">
+              <div class="card card-body">
                 <ul class="styling">
                   <li>Introduction</li>
                   <li>Download</li>
                   <li>Contents</li>
                   <li>Browsers & devices</li>
-                  <li>JavaScript</li>
                   <li>Webpack</li>
                   <li>Parcel</li>
                   <li>Accessibiility</li>
@@ -326,13 +333,6 @@
             </div>
           </div>
         </div>
-        <p>
-          <a class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse"
-            data-bs-target="#getting-started-collapse" aria-expanded="false" aria-current="true">
-            Getting started
-          </a>
-          <!-- <a class="btn btn-light" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Getting started</a> -->
-        </p>
         <p>
           <a class="btn btn-light" data-bs-toggle="collapse" href="#multiCollapseExample2" role="button"
             aria-expanded="false" aria-controls="multiCollapseExample2">Customize</a>
@@ -378,7 +378,7 @@
         </div>
         <p>
           <a class="btn btn-light" data-bs-toggle="collapse" href="#multiCollapseExample4" role="button"
-            aria-expanded="false" aria-controls="multiCollapseExample4">Layout</a>
+            aria-expanded="false" aria-controls="multiCollapseExample4">Content</a>
         </p>
         <div class="row">
           <div class="col">
@@ -547,7 +547,7 @@
           <h6>Migration</h6>
         </div>
       </div>
-      <div class="container-portion-two">
+      <div class="container p-5 container-portion-two">
         <div>
           <div class="container d-none d-sm-none d-md-block d-lg-none d-xl-none d-xxl-none">
             <button class="button-view-on-github d-md-none d-lg-none d-xl-none d-xxl-none mt-3">View on Github</button>
@@ -605,7 +605,7 @@
           </p>
           <h4><b>CSS</b></h4>
           <p>Copy-paste the stylesheet into your before all other stylesheets to load our CSS.</p>
-          <div class="bg-light p-2">
+          <div class="bg-light wrapping  p-2">
             <div class="d-flex flex-direction-row justify-content-end">
               <button type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top"
                 title="copy">
@@ -627,7 +627,7 @@
           <p>Include every Bootstrap JavaScript plugin and dependency with one of our two bundles. Both<br />
             bootstrap.bundle.js and bootstrap.bundle.min.js include Popper for our tooltips and popovers. For more<br />
             information about what’s included in Bootstrap, please see our contents section.</p>
-          <div class="bg-light p-2">
+          <div class="bg-light  wrapping p-2">
             <div class="d-flex flex-direction-row justify-content-end">
               <button type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top"
                 title="copy">
@@ -642,7 +642,7 @@
           <h4 class="pt-3">Separate</h4>
           <p>If you decide to go with the separate scripts solution, Popper must come first (if you’re using tooltips or
             popovers), and then our JavaScript plugins.</p>
-          <div class="bg-light p-2">
+          <div class="bg-light wrapping  p-2">
             <div class="d-flex flex-direction-row justify-content-end">
               <button type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top"
                 title="copy">
@@ -669,7 +669,7 @@
             and
             your<br /> pages should look like this:
           </p>
-          <div class="bg-light p-2">
+          <div class="bg-light  wrapping p-2">
             <div class="d-flex flex-direction-row justify-content-end">
               <button type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top"
                 title="copy">
@@ -709,7 +709,7 @@
           <h4 class="pt-3">HTML5 doctype</h4>
           <p>Bootstrap requires the use of the HTML5 doctype. Without it, you’ll see some funky incomplete styling,
             but<br /> including it shouldn’t cause any considerable hiccups.</p>
-          <div class="bg-light p-2">
+          <div class="bg-light wrapping  p-2">
             <div class="d-flex flex-direction-row justify-content-end">
               <button type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top"
                 title="copy">
@@ -726,7 +726,7 @@
             <br />scale up components as necessary using CSS media queries. To ensure proper rendering and touch zooming
             <br />for all devices, add the responsive viewport meta tag to your
           </p>
-          <div class="bg-light p-2">
+          <div class="bg-light wrapping  p-2">
             <div class="d-flex flex-direction-row justify-content-end">
               <button type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top"
                 title="copy">
@@ -746,7 +746,7 @@
             some
             third-party software like Google Maps and Google Custom Search Engine</p>
           <p>On the rare occasion you need to override it, use something like the following:</p>
-          <div class="bg-light p-2">
+          <div class="bg-light wrapping  p-2">
             <div class="d-flex flex-direction-row justify-content-end">
               <button type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top"
                 title="copy">
@@ -790,7 +790,7 @@
     </div>
   </div>
   <!-- medium devices approach-end -->
-  <div class="d-flex p-5">
+  <div class="container d-flex p-5">
     <div class="container-portion-one d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block">
       <p>
         <a class="btn btn-light" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button"
@@ -841,7 +841,7 @@
       </div>
       <p>
         <a class="btn btn-light" data-bs-toggle="collapse" href="#multiCollapseExample3" role="button"
-          aria-expanded="false" aria-controls="multiCollapseExample3">Layout</a>
+          aria-expanded="false" aria-controls="multiCollapseExample3">Contents</a>
       </p>
       <div class="row">
         <div class="col">
@@ -1034,7 +1034,7 @@
       <hr />
       <h6>Migration</h6>
     </div>
-    <div class="container-portion-two d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block">
+    <div class="p-5 container-portion-two d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block">
       <div class="flexing">
         <h1><b>Introduction</b></h1>
         <button class="button-view-on-github d-none d-sm-none d-md-inline d-lg-inline d-xl-inline d-xxl-inline">View on
@@ -1066,7 +1066,7 @@
         manager or need to download the source files? <a href="#">Head to the downloads page</a>.</p>
       <h4><b>CSS</b></h4>
       <p>Copy-paste the stylesheet into your before all other stylesheets to load our CSS.</p>
-      <div class="bg-light p-2">
+      <div class="bg-light  wrapping  p-2">
         <div class="d-flex flex-direction-row justify-content-end">
           <button type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top"
             title="copy">
@@ -1088,7 +1088,7 @@
       <p>Include every Bootstrap JavaScript plugin and dependency with one of our two bundles. Both<br />
         bootstrap.bundle.js and bootstrap.bundle.min.js include Popper for our tooltips and popovers. For more<br />
         information about what’s included in Bootstrap, please see our contents section.</p>
-      <div class="bg-light p-2">
+      <div class="bg-light  wrapping  p-2">
         <div class="d-flex flex-direction-row justify-content-end">
           <button type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top"
             title="copy">
@@ -1103,7 +1103,7 @@
       <h4>Separate</h4>
       <p>If you decide to go with the separate scripts solution, Popper must come first (if you’re using tooltips or
         popovers), and then our JavaScript plugins.</p>
-      <div class="bg-light p-2">
+      <div class="bg-light wrapping  p-2">
         <div class="d-flex flex-direction-row justify-content-end">
           <button type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top"
             title="copy">
@@ -1127,7 +1127,7 @@
         <br />HTML5 doctype and including a viewport meta tag for proper responsive behaviors. Put it all together and
         your<br /> pages should look like this:
       </p>
-      <div class="bg-light p-2">
+      <div class="bg-light wrapping  p-2">
         <div class="d-flex flex-direction-row justify-content-end">
           <button type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top"
             title="copy">
@@ -1157,7 +1157,7 @@
       <h4>HTML5 doctype</h4>
       <p>Bootstrap requires the use of the HTML5 doctype. Without it, you’ll see some funky incomplete styling,
         but<br /> including it shouldn’t cause any considerable hiccups.</p>
-      <div class="bg-light p-2">
+      <div class="bg-light  wrapping p-2">
         <div class="d-flex flex-direction-row justify-content-end">
           <button type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top"
             title="copy">
@@ -1174,7 +1174,7 @@
         <br />scale up components as necessary using CSS media queries. To ensure proper rendering and touch zooming
         <br />for all devices, add the responsive viewport meta tag to your
       </p>
-      <div class="bg-light p-2">
+      <div class="bg-light wrapping  p-2">
         <div class="d-flex flex-direction-row justify-content-end">
           <button type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top"
             title="copy">
@@ -1192,7 +1192,7 @@
         This ensures padding does not affect the final computed width of an element, but it can cause problems with some
         third-party software like Google Maps and Google Custom Search Engine</p>
       <p>On the rare occasion you need to override it, use something like the following:</p>
-      <div class="bg-light p-2">
+      <div class="bg-light wrapping  p-2">
         <div class="d-flex flex-direction-row justify-content-end">
           <button type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top"
             title="copy">
@@ -1227,7 +1227,7 @@
       </p>
     </div>
     <!-- on this page portion -->
-    <div class="container-portion-three d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block">
+    <div class="p-3 container-portion-three d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block">
       <h6>On this page</h6>
       <hr />
       <ul class="styling">
